@@ -1,0 +1,2 @@
+(window.webpackJsonpvivaestudio=window.webpackJsonpvivaestudio||[]).push([[0],{3:function(e,n,t){e.exports=t(8)},8:function(e,n,t){"use strict";t.r(n);var a=t(0),o=t.n(a),i=t(2);var r=function(){return o.a.createElement("div",null,o.a.createElement("h1",null,"vivaestudio"))};t.n(i).a.render(o.a.createElement(r,null),document.getElementById("root"))}},[[3,1,2]]]);
+//# sourceMappingURL=main.1c9db470.chunk.js.map

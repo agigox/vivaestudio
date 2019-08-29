@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/vivaestudio/static/js/main.1c9db470.chunk.js",
+    "main.js.map": "/vivaestudio/static/js/main.1c9db470.chunk.js.map",
+    "runtime~main.js": "/vivaestudio/static/js/runtime~main.edeb5d10.js",
+    "runtime~main.js.map": "/vivaestudio/static/js/runtime~main.edeb5d10.js.map",
+    "static/js/2.008d9236.chunk.js": "/vivaestudio/static/js/2.008d9236.chunk.js",
+    "static/js/2.008d9236.chunk.js.map": "/vivaestudio/static/js/2.008d9236.chunk.js.map",
+    "index.html": "/vivaestudio/index.html",
+    "precache-manifest.6bde1a35ad152a403b4ee7f77402c451.js": "/vivaestudio/precache-manifest.6bde1a35ad152a403b4ee7f77402c451.js",
+    "service-worker.js": "/vivaestudio/service-worker.js"
+  }
+}
