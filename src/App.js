@@ -1,8 +1,11 @@
 import React from 'react';
+import "./App.scss";
+import Header from './components/Header';
 
 function App() {
   return (
     <div>
+      <Header />
       <h2>Diseño web y desarrollo front-end</h2>
       
       <p>Más de 12 años de experiencia diseñando interfaces y desarrollando código front-end. Uso Sketch, WordPress, HTML5, SCSS, jQuery y Gulp, entre otros.</p>
