@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/vivaestudio/precache-manifest.41b6c1b698a286774d6c91ea9d52dacc.js"
+  "/vivaestudio/precache-manifest.a6420d290b445eac4415a9fb1e616afb.js"
 );
 
 self.addEventListener('message', (event) => {
