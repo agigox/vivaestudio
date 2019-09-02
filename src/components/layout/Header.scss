@@ -1,0 +1,14 @@
+.header-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+nav {
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    ul {
+        li {
+            display: inline-block;
+        }
+    }
+}

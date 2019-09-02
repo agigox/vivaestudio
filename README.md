@@ -77,3 +77,7 @@ To get access to this page from a link add this tag (do not forget to import Lin
 import { Link } from 'react-router-dom';
 // In your JSX insert your link
 <Link to="/route-example/">Route Example</Link>
+
+### Existing routes
+For the moment we have these routes: **/about**, **/legal**, **/contact** and **/portfolio**
+
