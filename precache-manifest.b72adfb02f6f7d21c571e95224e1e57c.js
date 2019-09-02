@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ccbc320f5babd415eef0cb9fe958189b",
+    "revision": "639cc1a01bbb64cb6e1b24a3399a75f6",
     "url": "/vivaestudio/index.html"
   },
   {
-    "revision": "5740ea924a562369c7d3",
-    "url": "/vivaestudio/static/css/main.66f17efb.chunk.css"
+    "revision": "95f6209f7a31076b0295",
+    "url": "/vivaestudio/static/css/main.0a5f1c6d.chunk.css"
   },
   {
-    "revision": "8f5f3b92314a24cf0977",
-    "url": "/vivaestudio/static/js/2.5ac71423.chunk.js"
+    "revision": "a7f1524a634a43f048dd",
+    "url": "/vivaestudio/static/js/2.cca5278c.chunk.js"
   },
   {
-    "revision": "5740ea924a562369c7d3",
-    "url": "/vivaestudio/static/js/main.9ffd2cea.chunk.js"
+    "revision": "95f6209f7a31076b0295",
+    "url": "/vivaestudio/static/js/main.1a7da3f6.chunk.js"
   },
   {
     "revision": "75b4fa8658566c7ac0b8",

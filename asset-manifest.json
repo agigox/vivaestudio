@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/vivaestudio/static/css/main.66f17efb.chunk.css",
-    "main.js": "/vivaestudio/static/js/main.9ffd2cea.chunk.js",
-    "main.js.map": "/vivaestudio/static/js/main.9ffd2cea.chunk.js.map",
+    "main.css": "/vivaestudio/static/css/main.0a5f1c6d.chunk.css",
+    "main.js": "/vivaestudio/static/js/main.1a7da3f6.chunk.js",
+    "main.js.map": "/vivaestudio/static/js/main.1a7da3f6.chunk.js.map",
     "runtime~main.js": "/vivaestudio/static/js/runtime~main.edeb5d10.js",
     "runtime~main.js.map": "/vivaestudio/static/js/runtime~main.edeb5d10.js.map",
-    "static/js/2.5ac71423.chunk.js": "/vivaestudio/static/js/2.5ac71423.chunk.js",
-    "static/js/2.5ac71423.chunk.js.map": "/vivaestudio/static/js/2.5ac71423.chunk.js.map",
+    "static/js/2.cca5278c.chunk.js": "/vivaestudio/static/js/2.cca5278c.chunk.js",
+    "static/js/2.cca5278c.chunk.js.map": "/vivaestudio/static/js/2.cca5278c.chunk.js.map",
     "index.html": "/vivaestudio/index.html",
-    "precache-manifest.1c98c79561fe2927598750f40e089c5b.js": "/vivaestudio/precache-manifest.1c98c79561fe2927598750f40e089c5b.js",
+    "precache-manifest.b72adfb02f6f7d21c571e95224e1e57c.js": "/vivaestudio/precache-manifest.b72adfb02f6f7d21c571e95224e1e57c.js",
     "service-worker.js": "/vivaestudio/service-worker.js",
-    "static/css/main.66f17efb.chunk.css.map": "/vivaestudio/static/css/main.66f17efb.chunk.css.map",
+    "static/css/main.0a5f1c6d.chunk.css.map": "/vivaestudio/static/css/main.0a5f1c6d.chunk.css.map",
     "static/media/index.scss": "/vivaestudio/static/media/basiersquare-regular-webfont.d01978c0.eot"
   }
 }
