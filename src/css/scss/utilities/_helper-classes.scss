@@ -1,0 +1,66 @@
+/* TEXT ALIGN
+   ========================================================================== */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/*
+   ========================================================================== */
+body {
+  .is-hidden {
+    display: none !important;
+  }
+  .invisible {
+    visibility: hidden;
+  }
+
+  .visible {
+    visibility: visible;
+  }
+}
+
+/* ONE LINE TEXT TRUNCATE
+   ========================================================================== */
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* POSITION
+   ========================================================================== */
+.pos-relative {
+  position: relative;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+/* TEXT SHADOW
+   ========================================================================== */
+.text-shadow {
+  text-shadow: 0 .1rem .14rem rgba(0,0,0,.5);
+}
+
+/* TEXT TRANSFORM
+   ========================================================================== */
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
