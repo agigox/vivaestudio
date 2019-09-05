@@ -1,97 +1,83 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
+# VIVAESTUDIO
+This is the **vivaestudio website**
+You can see the demo website from here: https://agigox.github.io/vivaestudio/
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+## End goal
+- Blazing fast website
+- Well optimized for on-site SEO (I will request specifics)
+- Developer friendly, easy to maintain and expand
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+## Feature requests
+- Live browser reload after code changes
+- Want to write CSS in SCSS. Needs to be compiled, autoprefixed and minified
+- Then critical CSS needs to be extracted and injected in compiled html. My current gulpfile.js does that.
+Minify and combine JS. I would be happy to use jQuery
+- Create a SVG sprite that will contain all icons
+- Webfont generator from a .ttf file (export woff and woff2)
+- Optimize images (JPG, PNG, GIF, SVG). Possibly convert JPG to WebP in the future and generate @2x and @1x images
+- Favicon generator: generate and name different favicon and touch-icon and move to root destination folder
+- Move root files to destination root folder: for robots.txt, htaccess, etc
+- Site will have pretty permalinks and a sitemap.xml will be generated from all URLs in the site
+- About the resulting HTML, it needs to be minified and include the injected CSS
+- How will markup be added to the site? I am very fluent with HTML5 but never coded a site with React, would love that you add some basic examples: variables, text strings, include partial files, link to other page of the site, add images...
+- Multilanguage support
 
-## 🚀 Quick start
+## How to maintain this website
 
-1.  **Create a Gatsby site.**
+### Install the project in your local
+- The first thing to do is to clone the project, install git, open the command line and type:
+```
+git clone https://github.com/agigox/vivaestudio.git
+```
+To start developing the project in your local, type:
+```
+npm run start
+```
+And navigate to http://localhost:3000/
+There is a **Live browser reload after code changes** (try to change the code and you will see changes in the browser)
+- To build the project, lunch the command:
+```
+npm run build
+```
+Copy the generated build folder into your host provider and Enjoy!
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
 
-    ```sh
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+### Adding new page (component) and route
+- To add a new page with a given route, for example, **/route-example**, you need to add a new component **RouteExample.js** and the scss file that style this component **/RouteExample.scss** in the **src/components/pages**:
+```
+import React, { Component } from 'react'
 
-1.  **Start developing.**
+export default class RouteExample extends Component {
+    render() {
+        return (
+            <div>
+                Here route example content
+            </div>
+        )
+    }
+}
 
-    Navigate into your new site’s directory and start it up.
+```
+In addiction, you need to add this route in **App.js** component
+```
+function App() {
+  return (
+    <Router>
+      <Header />
+      <Route path="/" exact component={Home} />
+      <Route path="/about" exact component={About} />
+      <!--Add your route here-->
+      <Route path="/route-example" exact component={RouteExample} />
+    </Router>
+  );
+}
+```
+To get access to this page from a link add this tag (do not forget to import Link)
+```
+import { Link } from 'react-router-dom';
+// In your JSX insert your link
+<Link to="/route-example/">Route Example</Link>
 
-    ```sh
-    cd my-default-starter/
-    gatsby develop
-    ```
+### Existing routes
+For the moment we have these routes: **/about**, **/legal**, **/contact** and **/portfolio**
 
-1.  **Open the source code and start editing!**
-
-    Your site is now running at `http://localhost:8000`!
-
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
-
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
-
-## 🧐 What's inside?
-
-A quick look at the top-level files and directories you'll see in a Gatsby project.
-
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
-
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
-
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
-
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
-
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
-
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
-
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
-
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
-
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
-
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
