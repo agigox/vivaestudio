@@ -43,35 +43,26 @@ Copy the generated build folder into your host provider and Enjoy!
 
 
 ### Adding new page (component) and route
-- To add a new page with a given route, for example, **/route-example**, you need to add a new component **RouteExample.js** and the scss file that style this component **/RouteExample.scss** in the **src/components/pages**:
+- To add a new page with a given route, for example, **/example**, you need to add a new file **example.js** and the scss file that style this component **/example.scss** in the **src/pages**:
 ```
-import React, { Component } from 'react'
+import React from "react";
+// ...
+const IndexPage = () => (
+  <Layout>
+    <SEO title="Home" />
+    <h1>Hi people 11</h1>
+    <p>Welcome to your new Gatsby site.</p>
+    <p>Now go build something great.</p>
+    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+      <Image />
+    </div>
+    <Link to="/page-2/">Go to page 2</Link>
+    <Link to="/page-3/">Go to page 3</Link>
+  </Layout>
+)
 
-export default class RouteExample extends Component {
-    render() {
-        return (
-            <div>
-                Here route example content
-            </div>
-        )
-    }
-}
-
 ```
-In addiction, you need to add this route in **App.js** component
-```
-function App() {
-  return (
-    <Router>
-      <Header />
-      <Route path="/" exact component={Home} />
-      <Route path="/about" exact component={About} />
-      <!--Add your route here-->
-      <Route path="/route-example" exact component={RouteExample} />
-    </Router>
-  );
-}
-```
+The **SEO** component is used for search engine optimization 
 To get access to this page from a link add this tag (do not forget to import Link)
 ```
 import { Link } from 'react-router-dom';
