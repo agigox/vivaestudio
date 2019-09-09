@@ -1,0 +1,14 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    .grid-item {
+        border: 1px solid black;
+        ul>li {
+            display: inline-block;
+            a {
+                background: none;
+                color: white;
+            }
+        }
+    }
+}
