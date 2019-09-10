@@ -14,11 +14,11 @@ const Header = ({ siteTitle }) => (
     <div className="grid-item">
       <nav>
         <ul>
-          <li><Link to="/">Home</Link></li>    
-          <li><Link to="/about/">About</Link></li>
-          <li><Link to="/contact/">Contact</Link></li>
-          <li><Link to="/legal/">Legal</Link></li>
-          <li><Link to="/portfolio/">Portfolio</Link></li>
+          <li><Link activeClassName="active" to="/">Home</Link></li>    
+          <li><Link activeClassName="active" to="/about/">About</Link></li>
+          <li><Link activeClassName="active" to="/contact/">Contact</Link></li>
+          <li><Link activeClassName="active" to="/legal/">Legal</Link></li>
+          <li><Link activeClassName="active" to="/portfolio/">Portfolio</Link></li>
         </ul>
       </nav>
     </div>
