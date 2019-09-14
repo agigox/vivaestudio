@@ -53,3 +53,5 @@ componentDidMount() {
     });
 }
 ```
+## Generate sitemap
+After building the project, you can find the sitemap in root public folder
