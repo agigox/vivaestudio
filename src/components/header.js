@@ -23,7 +23,6 @@ export default class Header extends Component {
               <li><Link activeClassName="active" to="/legal/">Legal</Link></li>
               <li><Link activeClassName="active" to="/portfolio/">Portfolio</Link></li>
             </ul>
-            <button className ="hello">Hello</button>
           </nav>
         </div>
       </div>
