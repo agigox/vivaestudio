@@ -38,3 +38,18 @@ There is a **Live browser reload after code changes** (try to change the code an
 npm run build
 ```
 Copy the generated build folder into your host provider and Enjoy!
+
+## Use JQuery
+In order to use **JQuery**:
+- Import jQuery in your component file
+```
+import $ from 'jquery';
+```
+- Use it in _componentDidMount()_ method like this:
+```
+componentDidMount() {
+    $("button.hello").click(function(){
+        console.log('Hello');
+    });
+}
+```
