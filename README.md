@@ -55,3 +55,24 @@ componentDidMount() {
 ```
 ## Generate sitemap
 After building the project, you can find the sitemap in root public folder
+
+## How to Add SVG Sprite
+- First go to **layout.js** file
+- Locate **SvgSprite** component
+- Add a name and your SVG tag to the array
+```
+<SvgSprite symbols={[
+                {
+                  name: 'cloud',
+                  svg: `<svg>
+                  ...
+                        </svg>`
+                }
+            ]}/>
+```
+- Use the SVG with the given name in your component, for example:
+```
+<svg>
+    <use xlinkHref="#cloud"></use>
+</svg>
+```
