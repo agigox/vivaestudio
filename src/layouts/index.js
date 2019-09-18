@@ -17,7 +17,7 @@ import "./index.scss"
 import SvgSprite from 'react-svg-sprite';
 import { IntlProvider } from 'react-intl';
 
-const Layout = ({ children,location, i18nMessages }) => {
+const Layout = ({ children, location, i18nMessages }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
