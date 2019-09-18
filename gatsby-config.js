@@ -1,3 +1,4 @@
+const languages = require('./src/data/languages');
 module.exports = {
   pathPrefix: "/vivaestudio",
   siteMetadata: {
@@ -5,6 +6,7 @@ module.exports = {
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
     siteUrl: `https://agigox.github.io/vivaestudio/`,
+    languages
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -34,8 +36,10 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-i18n',
       options: {        
-        langKeyDefault: 'es',
-        useLangKeyLayout: false
+        langKeyForNull: 'any',
+        langKeyDefault: languages.defaultLangKey,
+        useLangKeyLayout: true,
+        prefixDefault: false,
       }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
