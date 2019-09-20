@@ -1,6 +1,6 @@
 import React from "react";
 import {home} from "../data/seo/seo";
-import Layout from "../layouts/en";
+import Layout from "../layouts";
 import SEO from "../components/seo";
 /*
 
@@ -8,10 +8,10 @@ import SEO from "../components/seo";
 import Image from "../components/image";
 */
 
-const IndexPage = (props) => {
+const IndexPage = () => {
   
   return (
-    <Layout location={props.location}>
+    <Layout>
       <SEO {...home}/>
       <h2>Diseño web y desarrollo front-end</h2>
         

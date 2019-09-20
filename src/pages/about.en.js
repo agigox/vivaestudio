@@ -1,10 +1,10 @@
 import React from "react";
 
-import Layout from "../layouts/en";
+import Layout from "../layouts";
 import SEO from "../components/seo";
 
-const About = (props) => (
-  <Layout location={props.location}>
+const About = () => (
+  <Layout>
     <SEO title="About" />
     <p>
       English version

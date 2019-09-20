@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import Layout from "../layouts/en";
+import Layout from "../layouts";
 import SEO from "../components/seo";
 
-const Legal = (props) => (
-  <Layout location={props.location}>
+const Legal = () => (
+  <Layout>
     <SEO title="Page two" />
     <h1>Hi from the second page</h1>
     <p>Welcome to page 2</p>
