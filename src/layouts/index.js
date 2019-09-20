@@ -10,12 +10,12 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby";
 import { getCurrentLangKey, getLangs, getUrlForLang } from 'ptz-i18n';
 
+<<<<<<< HEAD:src/layouts/index.js
 
 import Header from "../components/header"
 import Footer from "../components/footer"
 import "./index.scss"
 import SvgSprite from 'react-svg-sprite';
-import { IntlProvider } from 'react-intl';
 
 const Layout = ({ children, location, i18nMessages }) => {
   const data = useStaticQuery(graphql`
@@ -37,10 +37,7 @@ const Layout = ({ children, location, i18nMessages }) => {
   const homeLink = `/${langKey}`.replace(`/${defaultLangKey}/`, '/');
   const langsMenu = getLangs(langs, langKey, getUrlForLang(homeLink, url)).map((item) => ({ ...item, link: item.link.replace(`/${defaultLangKey}/`, '/') }));
   return (
-    <IntlProvider
-            locale={langKey}
-            messages={i18nMessages}
-          >
+    <>
     <SvgSprite symbols={[
                 {
                   name: 'cloud',
@@ -49,12 +46,13 @@ const Layout = ({ children, location, i18nMessages }) => {
                         </svg>`
                 }
             ]}/>
-      <Header siteTitle={data.site.siteMetadata.title} langs={langsMenu}/>
+      
+      <Header siteTitle={data.site.siteMetadata.title} />
       <div>
         <main>{children}</main>
       </div>
       <Footer />
-      </IntlProvider>
+      </>
   )
 }
 
