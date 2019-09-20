@@ -8,34 +8,22 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby";
-import { getCurrentLangKey, getLangs, getUrlForLang } from 'ptz-i18n';
-
-<<<<<<< HEAD:src/layouts/index.js
 
 import Header from "../components/header"
 import Footer from "../components/footer"
 import "./index.scss"
 import SvgSprite from 'react-svg-sprite';
 
-const Layout = ({ children,location, i18nMessages }) => {
+const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
           title
-          languages {
-            defaultLangKey
-            langs
-          }
         }
       }
     }
   `);
-  const url = location.pathname;
-  const { langs, defaultLangKey } = data.site.siteMetadata.languages;
-  const langKey = getCurrentLangKey(langs, defaultLangKey, url);
-  const homeLink = `/${langKey}`.replace(`/${defaultLangKey}/`, '/');
-  const langsMenu = getLangs(langs, langKey, getUrlForLang(homeLink, url)).map((item) => ({ ...item, link: item.link.replace(`/${defaultLangKey}/`, '/') }));
   return (
     <>
     <SvgSprite symbols={[

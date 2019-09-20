@@ -8,6 +8,7 @@
     "gatsby": "^2.13.73",
     "gatsby-image": "^2.2.10",
     "gatsby-plugin-i18n": "^1.0.1",
+    "gatsby-plugin-intl": "^0.2.8",
     "gatsby-plugin-manifest": "^2.2.6",
     "gatsby-plugin-offline": "^2.2.7",
     "gatsby-plugin-react-helmet": "^3.1.4",
@@ -22,7 +23,6 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
-    "react-intl": "^3.2.3",
     "react-svg-sprite": "^1.0.8"
   },
   "devDependencies": {

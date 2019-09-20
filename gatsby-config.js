@@ -1,12 +1,10 @@
-const languages = require('./src/data/languages');
 module.exports = {
   pathPrefix: "/vivaestudio",
   siteMetadata: {
     title: `vivaestudio`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
-    siteUrl: `https://agigox.github.io/vivaestudio/`,
-    languages
+    siteUrl: `https://agigox.github.io/vivaestudio/`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
