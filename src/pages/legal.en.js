@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import Layout from "../layouts/es";
+import Layout from "../layouts/en";
 import SEO from "../components/seo";
 
 const Legal = (props) => (

@@ -1,6 +1,6 @@
 import React from "react";
 import {home} from "../data/seo/seo";
-import Layout from "../layouts/es";
+import Layout from "../layouts/en";
 import SEO from "../components/seo";
 /*
 
