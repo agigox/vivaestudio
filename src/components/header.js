@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import "./header.scss";
 import { Link } from "gatsby";
-import SelectLanguage from './selectLanguage';
 
 
 
@@ -28,7 +27,6 @@ export default class Header extends Component {
             </ul>
           </nav>
         </div>
-        <SelectLanguage langs={this.props.langs} />
       </div>
     )
   }
