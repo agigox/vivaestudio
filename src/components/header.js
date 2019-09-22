@@ -12,9 +12,7 @@ export default class Header extends Component {
       <div className="grid-container">
         <div className="grid-item">
           <h1>
-            <svg>
-                <use xlinkHref="#cloud"></use>
-            </svg> {siteTitle}
+             {siteTitle}
           </h1>
         </div>
         <div className="grid-item">
