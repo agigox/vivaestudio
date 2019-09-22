@@ -6,7 +6,6 @@
  */
 
 import React from "react";
-import PropTypes from "prop-types";
 import { injectIntl } from "gatsby-plugin-intl";
 import Footer from "./footer";
 import SvgSprite from 'react-svg-sprite';
