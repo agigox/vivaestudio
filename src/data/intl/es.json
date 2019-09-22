@@ -1,0 +1,17 @@
+{
+    "title": "Gatsby EnglishTa..",
+    "description": "Kick off your next need spanisha.",
+    "author": "@amine",
+    "hello": "Hi people All",
+    "welcome": "Welcome to your ne.",
+    "title_page2": "Page two",
+    "hello_page2": "Hi from the second page",
+    "go_page2": "Sponsor kif spanish",
+    "build": "Now go build something great.",
+    "welcome_page2": "Welcome to page 2",
+    "go_back": "Go back to the homepage",
+    "notfound": {
+      "header": "NOT FOUND",
+      "description": "You just hit a route that doesn't exist... the sadness."
+    }
+  }

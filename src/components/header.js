@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import "./header.scss";
-import { Link } from "gatsby";
+import { Link } from "gatsby-plugin-intl";
+import React, { Component } from "react";
+import Language from "./language";
 
 
 
@@ -8,6 +8,7 @@ export default class Header extends Component {
   render() {
     const {siteTitle} = this.props;
     return (
+      <>
       <div className="grid-container">
         <div className="grid-item">
           <h1>
@@ -28,6 +29,8 @@ export default class Header extends Component {
           </nav>
         </div>
       </div>
-    )
+      <Language />
+      </>
+    );
   }
 }
