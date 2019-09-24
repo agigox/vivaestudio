@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://agigox.github.io/vivaestudio/sitemap.xml
+Host: https://agigox.github.io
