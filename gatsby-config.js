@@ -48,6 +48,7 @@ module.exports = {
         sitemap: 'https://agigox.github.io/vivaestudio/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
-    }
+    },
+    'gatsby-plugin-svg-sprite'
   ],
 }
