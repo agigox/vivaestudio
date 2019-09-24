@@ -3,8 +3,11 @@ import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import {home} from "../data/seo/seo";
+import Img from 'gatsby-image';
+import { Link, graphql } from 'gatsby';
 
-const IndexPage = ({ intl }) => {
+
+const IndexPage = ({ intl, data }) => {
   return (
     <Layout>
       <SEO
@@ -28,8 +31,22 @@ const IndexPage = ({ intl }) => {
       
       <p>Puedes escribirme a alvaro (at) vivaestudio.com</p>
       <p>{intl.formatMessage({ id: "go_page2" })}</p>
+      <Img fluid={data.imageOne.childImageSharp.fluid} />
     </Layout>
   );
 }
 
 export default injectIntl(IndexPage);
+
+
+export const pageQuery = graphql`
+  query {
+    imageOne: file(relativePath: { eq: "one.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;
