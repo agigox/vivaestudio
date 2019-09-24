@@ -41,8 +41,13 @@ module.exports = {
         redirectComponent: require.resolve(`./src/components/redirect.js`),
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://agigox.github.io/vivaestudio/',
+        sitemap: 'https://agigox.github.io/vivaestudio/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    }
   ],
 }
