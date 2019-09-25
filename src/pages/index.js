@@ -5,7 +5,6 @@ import SEO from "../components/seo";
 import {home} from "../data/seo/seo";
 import Img from 'gatsby-image';
 import { Link, graphql } from 'gatsby';
-import twitterIcon from '../images/sprite.svg';
 
 
 
@@ -34,9 +33,7 @@ const IndexPage = ({ intl, data }) => {
       <p>Puedes escribirme a alvaro (at) vivaestudio.com</p>
       <p>{intl.formatMessage({ id: "go_page2" })}</p>
       <Img fluid={data.imageOne.childImageSharp.fluid} />
-      <svg>
-        <use xlinkHref={`#${twitterIcon.star}`} />
-      </svg>
+      
     </Layout>
   );
 }
