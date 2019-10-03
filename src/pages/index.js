@@ -5,6 +5,7 @@ import SEO from "../components/seo";
 import {home} from "../data/seo/seo";
 import Img from 'gatsby-image';
 import { Link, graphql } from 'gatsby';
+import sprite from '../images/sprite.svg';
 
 
 
@@ -33,7 +34,16 @@ const IndexPage = ({ intl, data }) => {
       <p>Puedes escribirme a alvaro (at) vivaestudio.com</p>
       <p>{intl.formatMessage({ id: "go_page2" })}</p>
       <Img fluid={data.imageOne.childImageSharp.fluid} />
+      <div className="App">
+      <p>Here we should see a triangle and a circle</p>
+      <svg width="50" height="50" viewBox="0 0 50 50" className="App-icon">
+        <use xlinkHref="/sprite.svg#square" />
+      </svg>
       
+      <svg width="50" height="50" viewBox="0 0 50 50" className="App-icon">
+      <use xlinkHref="#circle" xlinkHref={`${sprite}#circle`} />
+      </svg>
+    </div>
     </Layout>
   );
 }

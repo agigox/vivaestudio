@@ -41,6 +41,7 @@ module.exports = {
         redirectComponent: require.resolve(`./src/components/redirect.js`),
       },
     },
+    'gatsby-plugin-svg-sprite',
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
